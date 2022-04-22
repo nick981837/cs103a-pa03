@@ -10,6 +10,12 @@
         </li>
     <% } %>
 </ul> -->
+<% if (courses==[]){%>
+    No courses in your schedule!
+<% } else if (courses==null) { %>
+    No courses in your schedule!
+<% } else if (courses.length>0) { %>
+<h2 class="mt-5 text-center">My Schedule</h2>
 <div class="d-flex flex-wrap text-center overflow-scroll">
     <% for (course of courses) {%>
     <div class="bg-light m-3 p-2 border border-primary border-2">
@@ -43,6 +49,7 @@
     </div>
     <%}%>
 </div>
+<% } %>
 
 <!--
     <pre>
