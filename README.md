@@ -1,6 +1,6 @@
 # Course Finder Web Application (CS103A, PA03)
 
-Link to movie explaining the app: https://drive.google.com/drive/u/0/folders/1ZZfv08lBilJO8e5dgrVC_DPPUqsa_W2p
+Link to movie explaining the app: https://drive.google.com/drive/folders/1ZZfv08lBilJO8e5dgrVC_DPPUqsa_W2p?usp=sharing
 
 This is a web application that allows you to search courses that were offered at Brandeis in 2020-2021.
 
