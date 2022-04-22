@@ -1,4 +1,4 @@
-<ul>
+<!-- <ul>
     <% for (course of courses){%>
         <li> 
             <a href="/schedule/remove/<%= course._id %>">X</a>
@@ -9,7 +9,40 @@
             
         </li>
     <% } %>
-</ul>
+</ul> -->
+<div class="d-flex flex-wrap text-center overflow-scroll">
+    <% for (course of courses) {%>
+    <div class="bg-light m-3 p-2 border border-primary border-2">
+        <div class="">
+            <span>
+                <%= course.subject %> 
+                <%= course.coursenum %> 
+                <%= course.term %> 
+            </span>
+            <strong><%= course.name %></strong>
+            
+        </div>
+        <div class="mb-1">
+            <%=course.instructor[0] %>
+            <%=course.instructor[1] %>
+            (<%=course.instructor[2] %>)
+        </div>
+        <div class="mb-1">
+           Enrollment: <%=course.enrolled %>,
+           Limit: <%=course.limit || 999 %>,
+           Waitlist: <%= course.waiting %>
+           <br>
+           Times: <%= course.strTimes %>
+        </div>
+        <div class="">
+            <em><%=course.details %></em>
+        </div>
+        <div class="p-3">
+            <%=course.description %>
+        </div>
+    </div>
+    <%}%>
+</div>
 
 <!--
     <pre>
